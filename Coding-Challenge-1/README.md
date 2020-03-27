@@ -1,0 +1,1 @@
+1. git clone https://github.com/RafaelSerna/First-Partial-Exam-1.git

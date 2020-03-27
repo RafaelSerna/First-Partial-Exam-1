@@ -5,3 +5,86 @@ div{
     padding: 5px;
 }
 
+@media (min-width:960px) {
+    .heading {
+        display: flex;
+        justify-content: space-around;
+    }
+    .heading-box {
+        padding-left: 5px;
+    }
+    .navigation{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .nav-box{
+        flex-grow: 1;
+        text-align: center;
+    }
+    .content {
+        display: flex;
+    }
+    .side {
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+    }
+    .side-box {
+        text-align: center;
+        flex-grow: 1;
+    }
+    .main {
+        display: flex;
+        width: 55%;
+    }
+}
+
+@media (min-width:640px) and (max-width:959px) {
+    .heading{
+        display: none;
+    }
+    .navigation{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .nav-box{
+        flex-grow: 1;
+        text-align: center;
+    }
+    .content {
+        display: flex;
+    }
+    .side {
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+    }
+    .side-box {
+        text-align: center;
+    }
+    .main {
+        width: 55%;
+        flex-direction: column;
+    }
+}
+
+@media (min-width:320px) and (max-width:639px) {
+    .heading{
+        display: none;
+    }
+    .navigation{
+        columns: 2;
+    }
+    .nav-box{
+        flex-grow: 1;
+        text-align: center;
+    }
+    .side {
+        display: none;
+    }
+    .main {
+        display: none;
+    }
+}
+
